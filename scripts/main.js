@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if ("IntersectionObserver" in window) {
         lazyloadImages = document.querySelectorAll(".lazy");
-        let imageObserver = new IntersectionObserver(function(entries, observer) {
+        let imageObserver = new IntersectionObserver(function(entries) {
             entries.forEach(function(entry) {
                 if (entry.isIntersecting) {
                     let image = entry.target;
@@ -96,7 +96,7 @@ let fade = document.querySelector(".fade");
 window.onload = function(){
     let element = document.querySelector(".load-bar");
     let width = 1;
-    let identity = setInterval(scene, 50);
+    let identity = setInterval(scene, 100);
     function scene() {
         if (width >= 100) {
             clearInterval(identity);
