@@ -96,7 +96,7 @@ let fade = document.querySelector(".fade");
 window.onload = function(){
     let element = document.querySelector(".load-bar");
     let width = 1;
-    let identity = setInterval(scene, 100);
+    let identity = setInterval(scene, 1);
     function scene() {
         if (width >= 100) {
             clearInterval(identity);
