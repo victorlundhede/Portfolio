@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         img.classList.remove('lazy');
                     }
                 });
-                if(lazyloadImages.length == 0) {
+                if(lazyloadImages.length === 0) {
                     document.removeEventListener("scroll", lazyload);
                     window.removeEventListener("resize", lazyload);
                     window.removeEventListener("orientationChange", lazyload);
@@ -93,7 +93,7 @@ btn.addEventListener('click', () => {
 let width = 0;
 let preloader = document.querySelectorAll(".preloader");
 let fade = document.querySelector(".fade");
-window.onload = function(e){
+window.onload = function(){
     let element = document.querySelector(".load-bar");
     let width = 1;
     let identity = setInterval(scene, 50);
