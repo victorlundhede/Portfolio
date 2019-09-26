@@ -27,6 +27,16 @@ p {
 }
 img {
 	width: 100%;
+	opacity: 1;
+	transition: opacity 1.5s;
+}
+.lazy {
+	opacity: 0;
+}
+[data-src]::before {
+	content: '';
+	display: block;
+	padding-top: 56.25%;
 }
 /*GLOBAL END*/
 
@@ -266,6 +276,7 @@ li {
 }
 .social_media i {
 	font-size: 5rem;
+	color: white;
 	transition: color 650ms;
 }
 .social_media .nav_list {
