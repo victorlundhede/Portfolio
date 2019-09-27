@@ -1,15 +1,19 @@
-let menu = document.querySelector('.menu_toggler');
-let nav_link = document.querySelectorAll('.top_nav .nav_link');
+let elements = {
+	menu: document.querySelector('.menu_toggler'),
+	nav_link: document.querySelectorAll('.top_nav .nav_link'),
+	top_nav: document.querySelector('.top_nav'),
+	lazy: document.querySelectorAll('.lazy')
+};
 
-menu.addEventListener('click', () => {
-	menu.classList.toggle('open');
-	document.querySelector('.top_nav').classList.toggle('open');
+elements.menu.addEventListener('click', () => {
+	elements.menu.classList.toggle('open');
+	elements.top_nav.classList.toggle('open');
 });
 
-for (let link of nav_link) {
+for (let link of elements.nav_link) {
 	link.addEventListener('click', () => {
-		menu.classList.remove('open');
-		document.querySelector('.top_nav').classList.remove('open');
+		elements.menu.classList.remove('open');
+		elements.top_nav.classList.remove('open');
 	});
 }
 
@@ -17,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	let lazyloadImages;
 
 	if ('IntersectionObserver' in window) {
-		lazyloadImages = document.querySelectorAll('.lazy');
+		lazyloadImages = elements.lazy;
 		let imageObserver = new IntersectionObserver(function(entries) {
 			entries.forEach(function(entry) {
 				if (entry.isIntersecting) {
@@ -34,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		});
 	} else {
 		let lazyloadThrottleTimeout;
-		lazyloadImages = document.querySelectorAll('.lazy');
+		lazyloadImages = elements.lazy;
 
 		function lazyload() {
 			if (lazyloadThrottleTimeout) {
@@ -51,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				});
 				if (lazyloadImages.length === 0) {
 					document.removeEventListener('scroll', lazyload);
+					document.removeEventListener('touchmove', lazyload);
 					window.removeEventListener('resize', lazyload);
 					window.removeEventListener('orientationChange', lazyload);
 				}
@@ -58,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 
 		document.addEventListener('scroll', lazyload);
+		document.addEventListener('touchmove', lazyload);
 		window.addEventListener('resize', lazyload);
 		window.addEventListener('orientationChange', lazyload);
 	}
