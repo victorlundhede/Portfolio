@@ -276,7 +276,6 @@ li {
 }
 .social_media i {
 	font-size: 5rem;
-	color: white;
 	transition: color 650ms;
 }
 .social_media .nav_list {
@@ -285,7 +284,8 @@ li {
 .fa-linkedin:hover {
 	color: #0e76a8;
 }
-.fa-github:hover {
+.fa-github:hover,
+.fa-envelope:hover {
 	color: black;
 }
 /*ABOUT END*/

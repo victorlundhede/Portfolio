@@ -127,7 +127,7 @@ elements.submitBtn.addEventListener('click', (e) => {
 			message +
 			'\n';
 		// Display input data in a dialog box before submitting the form
-		alert(dataPreview);
+		//alert(dataPreview);
 	}
 });
 
