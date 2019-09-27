@@ -97,11 +97,13 @@
                     </p>
             </div>
         </div>
+        <!--INDSÆT VIDEO NÅR DEN ER LAVET
         <div class="video_wrapper">
             <video id="personal_video" controls preload="none" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E">
                 <source src="images/vid.mp4" type="video/mp4">
             </video>
         </div>
+    -->
     </section>
     <section class="service" id="service">
         <div class="container">
@@ -211,14 +213,17 @@
                     <h1>Kontakt</h1>
                     <h6>Lad os arbejde sammen</h6>
                 </div>
-                <form action="">
+                <form name="contactForm" action="https://formspree.io/info@victorlundhede.dk" method="POST">
                     <label for="name">Navn: </label>
-                    <input type="text" id="name" name="name" placeholder="Skriv dit navn..." required>
+                    <input type="text" id="name" name="name" placeholder="Skriv dit navn...">
+                    <div class="error" id="nameErr"></div>
                     <label for="email">Email: </label>
-                    <input type="text" id="email" name="email" placeholder="Skriv din email..." required>
+                    <input type="text" id="email" name="email" placeholder="Skriv din email...">
+                    <div class="error" id="emailErr"></div>
                     <label for="message">Besked: </label>
                     <textarea id="message" name="message" cols="10" rows="10"></textarea>
-                    <input type="submit" value="Send">
+                    <div class="error" id="messageErr"></div>
+                    <input type="submit" value="Send" class="submitBtn">
                 </form>
             </div>
             <div class="social_media">

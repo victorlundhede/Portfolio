@@ -489,6 +489,9 @@ input[type="submit"]:hover {
 	color: #da4357;
 	background-color: #f58b6f;
 }
+.error {
+	color: #da4357;
+}
 /*CONTACT END*/
 /*FOOTER START*/
 .copyright {
