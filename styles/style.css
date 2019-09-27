@@ -100,7 +100,7 @@ header {
 .landing_text h1 {
 	font-size: 10rem;
 	font-family: 'Permanent Marker', cursive;
-	background: linear-gradient(to top, #15db95, #e4c580);
+	background: linear-gradient(to top, #f8ac1e, #9431f1);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	user-select: none;
@@ -173,7 +173,7 @@ li {
 
 .nav_link:hover,
 .nav_link:focus {
-	background: linear-gradient(to top, #15db95, #e4c580);
+	background: linear-gradient(to top, #f8ac1e, #9431f1);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -198,7 +198,7 @@ li {
 	transform: rotate(-45deg);
 }
 .bar {
-	background: linear-gradient(to right, #15db95, #e4c580);
+	background: linear-gradient(to right, #f8ac1e, #9431f1);
 	width: 100%;
 	height: 5px;
 	border-radius: .8rem;
@@ -225,7 +225,7 @@ li {
 
 /*ABOUT START*/
 .about {
-	background-color: rgba(0, 125, 255, 0.5);
+	background-color: #a7d3e0;
 	justify-content: center;
 }
 .about .container {
@@ -291,7 +291,7 @@ li {
 /*ABOUT END*/
 /*SERVICES START*/
 .service {
-	background-color: rgba(90, 27, 172, 0.5);
+	background-color: #f58b6f;
 }
 .my_skills {
 	margin-top: 10rem;
@@ -316,7 +316,7 @@ li {
 .icon_container {
 	width: 12rem;
 	height: 7rem;
-	background: red;
+	background: #cc3333;
 	position: relative;
 	margin-bottom: 2rem;
 	display: flex;
@@ -330,7 +330,7 @@ li {
 	height: 0;
 	border-left: 6rem solid transparent;
 	border-right: 6rem solid transparent;
-	border-bottom: 3rem solid red;
+	border-bottom: 3rem solid #cc3333;
 }
 .icon_container:after {
 	content: "";
@@ -341,7 +341,7 @@ li {
 	height: 0;
 	border-left: 6rem solid transparent;
 	border-right: 6rem solid transparent;
-	border-top: 3rem solid red;
+	border-top: 3rem solid #cc3333;
 }
 .icon_container i {
 	color: #e4c580;
@@ -351,7 +351,7 @@ li {
 /*SERVICES END*/
 /*PORTFOLIO START*/
 .portfolio {
-	background-color: #f39780;
+	background-color: #f16173;
 }
 .portfolio_element {
 	display: flex;
@@ -382,15 +382,15 @@ li {
 .portfolio_desc h6 {
 	font-size: 1.5rem;
 	text-transform: uppercase;
-	font-weight: 300;
+	font-weight: 700;
 	opacity: .3;
 }
 .portfolio_desc .cta {
 	display: inline-block;
 	margin-top: 2.5rem;
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	text-transform: uppercase;
-	color: #15db95;
+	color: #cc3333;
 	transition: color 650ms;
 }
 .portfolio_desc .cta:hover {
@@ -399,10 +399,10 @@ li {
 /*PORTFOLIO END*/
 /*EXPERIENCE START*/
 .experience {
-	background-color: #aa04f7;
+	background-color: #739fb5;
 }
 .timeline ul {
-	border-left: 4px solid #15db95;
+	border-left: 4px solid #094e67;
 	border-radius: .8rem;
 	background-color: rgba(0, 0, 0, 0.05);
 	margin: 0 auto;
@@ -454,12 +454,12 @@ li {
 	left: -8rem;
 	height: 1.5rem;
 	width: 1.5rem;
-	background-color: #0d19a3;
+	background-color: #739fb5;
 }
 /*EXPERIENCE END*/
 /*CONTACT START*/
 .contact {
-	background-color: #f39780;
+	background-color: #094e67;
 }
 form {
 	width: 70%;
@@ -474,27 +474,27 @@ textarea {
 	padding: 1rem;
 	margin-bottom: 5px;
 	border: none;
-	outline-color: #15db95;
+	outline-color: #da4357;
 }
 input[type="submit"] {
 	width: initial;
-	background-color: #15db95;
-	color: #0d19a3;
+	background-color: #da4357;
+	color: #094e67;
 	padding: 1rem 2rem;
 	border-radius: .8rem;
 	cursor: pointer;
 	transition: background-color 650ms;
 }
 input[type="submit"]:hover {
-	color: #080f5b;
-	background-color: #e4c580;
+	color: #da4357;
+	background-color: #f58b6f;
 }
 /*CONTACT END*/
 /*FOOTER START*/
 .copyright {
 	width: 100%;
 	text-align: center;
-	background-color: #80547c;
+	background-color: #cc3333;
 	padding: 2rem 0;
 	position: relative;
 }
@@ -502,7 +502,7 @@ input[type="submit"]:hover {
 	position: absolute;
 	width: 5rem;
 	height: 5rem;
-	background-color: #e4c580;
+	background-color: #f8ac1e;
 	top: -8rem;
 	right: 5rem;
 	border-radius: 100%;
@@ -510,7 +510,7 @@ input[type="submit"]:hover {
 }
 
 .up i {
-	color: #0d19a3;
+	color: #094e67;
 	font-size: 2rem;
 	margin: 1.2rem 0 0 0;
 }

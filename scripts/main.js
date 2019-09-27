@@ -55,7 +55,6 @@ document.addEventListener('DOMContentLoaded', function() {
 				});
 				if (lazyloadImages.length === 0) {
 					document.removeEventListener('scroll', lazyload);
-					document.removeEventListener('touchmove', lazyload);
 					window.removeEventListener('resize', lazyload);
 					window.removeEventListener('orientationChange', lazyload);
 				}
@@ -63,7 +62,6 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 
 		document.addEventListener('scroll', lazyload);
-		document.addEventListener('touchmove', lazyload);
 		window.addEventListener('resize', lazyload);
 		window.addEventListener('orientationChange', lazyload);
 	}
