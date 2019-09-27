@@ -70,7 +70,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 elements.submitBtn.addEventListener('click', (e) => {
-	e.preventDefault();
 	// Retrieving the values of form elements
 	let name = document.getElementById('name').value;
 	let email = document.getElementById('email').value;
@@ -129,9 +128,6 @@ elements.submitBtn.addEventListener('click', (e) => {
 			'\n';
 		// Display input data in a dialog box before submitting the form
 		alert(dataPreview);
-		name.value = '';
-		email.value = '';
-		message.value = '';
 	}
 });
 
