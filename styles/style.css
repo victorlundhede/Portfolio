@@ -777,5 +777,18 @@ input[type="submit"]:hover {
 	}
 }
 @media screen and (min-width: 1200px) {
+	.video_wrapper {
+		min-width: 50%;
+	}
+	#personal_video {
+		max-height: 500px;
+	}
+	.menu_toggler {
+		width: 7rem;
+		height: 6rem;
+	}
+	.bar {
+		height: 7px;
+	}
 }
 /*MEDIA QUERIES END*/
