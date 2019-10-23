@@ -33,6 +33,11 @@ img {
 	opacity: 1;
 	transition: opacity 1.5s;
 }
+input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
 .lazy {
 	opacity: 0;
 }
