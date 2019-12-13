@@ -1,10 +1,10 @@
 //SELECT ELEMENTS
 let elements = {
-	menu: document.querySelector('.menu_toggler'),
-	nav_link: document.querySelectorAll('.top_nav .nav_link'),
-	top_nav: document.querySelector('.top_nav'),
-	lazy: document.querySelectorAll('.lazy'),
-	submitBtn: document.querySelector('.submitBtn')
+	menu      : document.querySelector('.menu_toggler'),
+	nav_link  : document.querySelectorAll('.top_nav .nav_link'),
+	top_nav   : document.querySelector('.top_nav'),
+	lazy      : document.querySelectorAll('.lazy'),
+	submitBtn : document.querySelector('.submitBtn')
 };
 //EVENT LISTENER FOR WHEN USER CLICKS HAMBURGER MENU
 elements.menu.addEventListener('click', () => {
